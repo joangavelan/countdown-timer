@@ -16,7 +16,6 @@ const getTimeDifference = (start, end) => {
     minutes = minutes - (days * 24 * 60) - (hours * 60);
     seconds = seconds - (days * 24 * 60 * 60) - (hours * 60 * 60) - (minutes * 60);
 
-    // return `${days} ${hours} ${minutes} ${seconds}`;
     return {
         days,
         hours,
