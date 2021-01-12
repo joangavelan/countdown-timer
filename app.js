@@ -35,4 +35,8 @@ let timer = setInterval(() => {
     hours.textContent = timeDifference.hours;
     minutes.textContent = timeDifference.minutes;
     seconds.textContent = timeDifference.seconds;
+
+    if (timeDifferenceObj.days === 0 && timeDifferenceObj.hours === 0 && timeDifferenceObj.minutes === 0 && timeDifferenceObj.seconds === 0) {
+        clearInterval(timer);
+    }
 }, 1000);
